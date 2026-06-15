@@ -3,12 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    /* Жестко задаем белый фон для всего документа от края до края */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #ffffff !important; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+  </style>
 </head>
-<body style="margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; background: #ffffff;">
+<body>
   
   <lottie-player 
     src="main.json" 
-    background="#ffffff" 
+    background="transparent" 
     speed="1" 
     style="width: 100%; height: 100%; max-width: 1200px;" 
     loop 
